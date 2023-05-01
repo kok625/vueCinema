@@ -1,0 +1,142 @@
+@media (max-width:1200px) {}
+
+@media (max-width:992px) {
+    .header__content {
+        align-items: center;
+    }
+
+    .films__cards {
+        grid-template-columns: repeat(2, 255px);
+        justify-content: center;
+    }
+
+    .title {
+        margin: 0 auto;
+    }
+
+    .collection__cards {
+        grid-template-columns: repeat(1, 350px);
+        justify-content: center;
+    }
+
+    .series__cards {
+        grid-template-areas:
+            'thrones thrones thrones thrones'
+            'witcher witcher witcher witcher'
+            'witcher witcher witcher witcher'
+            'wanda wanda flash flash'
+            'wanda wanda flash flash'
+            'great great gotham gotham'
+            'great great gotham gotham';
+            padding: 0 20px;
+    }
+
+}
+
+@media (max-width:768px) {
+    .widow__inner {
+        align-items: center;
+    }
+
+    .widow::after {
+        background: linear-gradient(180deg, #DEF7FF 0%, #F4FCFF 45.64%, rgba(255, 255, 255, 0) 100.72%);
+    }
+}
+
+@media (max-width:576px) {
+    .nav__item {
+        flex-direction: column;
+        padding-top: 20px;
+    }
+
+    .padding {
+        padding-bottom: 20px;
+    }
+
+    .header__title {
+        font-size: 36px;
+    }
+
+    .header__btns_btn {
+        padding: 17px 35px;
+    }
+
+    .films__cards {
+        grid-template-columns: repeat(1, 255px);
+        justify-content: center;
+    }
+
+    .widow__inner img {
+        width: 100%;
+    }
+
+    .widow__inner_text {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .series__cards {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            'trones'
+            'wanda'
+            'flash'
+            'great'
+            'gothman';
+            padding: 0 20px;
+    }
+    
+    .witcher,
+    .wanda,
+    .flash,
+    .great,
+    .gotham {
+        min-height: 300px;
+    }
+    
+    .footer__item {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .thrones {
+        padding: 50px 22px;
+    }
+    
+    .series__card_title {
+        font-size: 35px;
+    }
+    
+    .series__card_text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:375px) {
+    .nav__list {
+        gap: 20px;
+    }
+
+    .header__title {
+        font-size: 31px;
+        line-height: 30px;
+    }
+
+    .header__btns_btn {
+        padding: 17px 30px;
+    }
+    
+    .series__card_title {
+        font-size: 26px;
+    }
+    
+    .collection__card {
+        grid-template-columns: repeat(1, 300px);
+    }
+    
+    .footer__left_text{
+        font-size: 15px;
+    }
+}
+
+@media (max-width:320px) {}
